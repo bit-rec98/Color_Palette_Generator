@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Dark-light mode switcher</title>
 </head>
-<body>
-    <header>
-        <h1>Theme mode switcher</h1>
+<body id="bodyId">
+    <header id="headerId">
+        <h1 id="mainTitle">Theme mode switcher</h1>
         <ul class="linksList">
             <li class="linkItem">
-                <a class="link" href="https://github.com/bit-rec98/Dark-Light_Switcher.git">Code</a>
+                <a class="link" href="https://github.com/bit-rec98/Theme_Mode_Switcher.git" target="_blank">Code</a>
             </li>
             <li class="linkItem">
-                <a class="link" href="https://github.com/bit-rec98">Github</a>
+                <a class="link" href="https://github.com/bit-rec98" target="_blank">Github</a>
             </li>
             <li class="linkItem">
                 <button class="material-symbols-sharp" id="paletteBtn">
@@ -26,18 +26,21 @@
     </header>
     <main>
         <div class="switcher">
-            <button class="material-symbols-sharp toggler-btn on">
+            <button class="material-symbols-sharp" id="togglerBtnDm">
                 toggle_on
+            </button>
+            <button class="material-symbols-sharp" id="togglerBtnLm">
+                toggle_off
             </button>
         </div>
     </main>
-    <footer>
-        <h3>Cristian Recabarren</h3>
+    <footer id="footerId">
+        <h3 id="footerTitle">Cristian Recabarren</h3>
         <ul class="linksList footerLinks">
-            <li class="linkItem"><a class="link" href="#">Link</a></li>
-            <li class="linkItem"><a class="link" href="#">Link</a></li>
+            <li class="linkItem"><a class="link" href="https://www.linkedin.com/in/rec-cristian98/" target="_blank">LinkedIn</a></li>
+            <li class="linkItem"><a class="link" href="#" target="_blank">Portfolio</a></li>
         </ul>
     </footer>
-    <script src="main.js"></script>
+    <script type="module" src="js/main.js" ></script>
 </body>
 </html>
