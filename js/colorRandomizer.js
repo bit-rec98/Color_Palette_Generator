@@ -1,3 +1,7 @@
+// import {structure} from './toggler.js'
+
+// import { colorRandomizer } from "./toggler";
+
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -7,6 +11,4 @@ function getRandomColor() {
     return color;
 }
 
-function updateColor(){
-    
-}
+export {getRandomColor}

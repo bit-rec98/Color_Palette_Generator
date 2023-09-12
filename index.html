@@ -9,18 +9,13 @@
 </head>
 <body id="bodyId">
     <header id="headerId">
-        <h1 id="mainTitle">Theme mode switcher</h1>
+        <h1 id="mainTitle">Theme mode switcher | Random color code generator</h1>
         <ul class="linksList">
             <li class="linkItem">
                 <a class="link" href="https://github.com/bit-rec98/Theme_Mode_Switcher.git" target="_blank">Code</a>
             </li>
             <li class="linkItem">
                 <a class="link" href="https://github.com/bit-rec98" target="_blank">Github</a>
-            </li>
-            <li class="linkItem">
-                <button class="material-symbols-sharp" id="paletteBtn">
-                palette
-                </button>
             </li>
         </ul>
     </header>
@@ -32,6 +27,32 @@
             <button class="material-symbols-sharp" id="togglerBtnLm">
                 toggle_off
             </button>
+        </div>
+        <div class="colorPicker">
+            <div class="solidPicker">
+                <label for="solidColorPicker">Pick your solid color here:</label>
+                <div class="inputPicker">
+                    <button class="material-symbols-sharp" id="paletteBtn">
+                        palette
+                    </button>
+                    <input type="text" value="" id="solidColorPicker" placeholder="#hexCode">
+                    <button class="material-symbols-sharp copyBtn">
+                        content_copy
+                    </button>
+                </div>
+            </div>
+            <div class="gradientPicker">
+                <label for="gradientColorPicker">Pick your gradient color here:</label>
+                <div class="inputPicker">
+                    <button class="material-symbols-sharp" id="paletteBtn">
+                        palette
+                    </button>
+                    <input type="text" value="" id="gradientColorPicker" placeholder="#hexCode">
+                    <button class="material-symbols-sharp copyBtn">
+                        content_copy
+                    </button>
+                </div>
+            </div>
         </div>
     </main>
     <footer id="footerId">
