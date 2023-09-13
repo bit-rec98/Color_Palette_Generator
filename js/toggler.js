@@ -9,7 +9,8 @@ const structure = {
     togglerBtnLm: document.getElementById('togglerBtnLm'),
     inputSolid: document.getElementById('solidColorPicker'),
     inputGradient: document.getElementById('gradientColorPicker'),
-    paletteBtn: document.getElementById('paletteBtn'),
+    solidPaletteBtn: document.getElementById('solidPaletteBtn'),
+    grandientPaletteBtn: document.getElementById('gradientPaletteBtn'),
     body: document.getElementById('bodyId'),
     header: document.getElementById('headerId'),
     footer: document.getElementById('footerId'),
@@ -55,20 +56,20 @@ const togglerMode = {
     }
 }
 
-
 const colorRandomizer = {
-    updateColor: function(){
+    getGradientColor: function(){
         let randomColor_A = getRandomColor();
         let randomColor_B = getRandomColor();
         const gradientColor = `linear-gradient(270deg, ${randomColor_A}, ${randomColor_B})`;
         structure.body.style.background = gradientColor;
         structure.inputGradient.value = `${randomColor_A}, ${randomColor_B}`;
-        // structure.header.style.background = `${randomColor}`;
-        // structure.footer.style.background = `${randomColor}`;
         return gradientColor
+    },
+    getSolidColor: function(){
+        let randomSolidColor = getRandomColor();
+        structure.body.style.background = randomSolidColor;
+        structure.inputSolid.value = `${randomSolidColor}`;
     }
 }
-
-
 
 export {structure, togglerMode, colorRandomizer}

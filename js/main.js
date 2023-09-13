@@ -23,12 +23,6 @@ function setLightModeTrigger(){
 
 randomizeColors()
 function randomizeColors(){
-    structure.paletteBtn.addEventListener('click', colorRandomizer.updateColor);
+    structure.grandientPaletteBtn.addEventListener('click', colorRandomizer.getGradientColor);
+    structure.solidPaletteBtn.addEventListener('click', colorRandomizer.getSolidColor);
 } 
-
-// structure.paletteBtn.addEventListener('mouseover', () => {
-//     colorRandomizer.updateColor()
-//     structure.paletteBtn.style.background = `${gradientColor}`
-// })
-
-console.dir(structure.paletteBtn)
